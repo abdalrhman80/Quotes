@@ -1,0 +1,91 @@
+body {
+    background-color: #212121;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../imgs/landscape-tree-nature-forest-grass-horizon-1411195-pxhere.com.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.colorGray {
+    color: #30363d;
+}
+
+.bg-white {
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+}
+
+.inside {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-header {
+    border-bottom-color: transparent;
+}
+
+.modal-footer {
+    border-top-color: transparent;
+}
+
+.double-quote {
+    width: 60px;
+    height: 60px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.paragraph {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.paragraph-media {
+    font-size: 23px;
+    margin: 20px 0;
+}
+
+.reload {
+    width: 16px;
+    height: 16px;
+}
+
+@media screen and (max-width:992px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .inside {
+        width: 75%;
+    }
+
+    .paragraph-media {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .inside {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:568px) {
+    h1 {
+        font-size: 35px;
+    }
+}
+
+.btn {
+    --bs-btn-padding-x: 15px;
+    --bs-btn-padding-y: 10px;
+}
+
+.btn-close {
+    --bs-btn-close-focus-shadow: 0;
+}
