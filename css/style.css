@@ -7,6 +7,90 @@ body {
     height: 100vh;
 }
 
+.layer-top {
+    position: fixed;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 555555555555555;
+    animation: 1s top forwards;
+}
+
+.layer-bottom {
+    position: fixed;
+    bottom: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 555555555555555;
+    animation: 1s bottom forwards;
+}
+
+@keyframes top {
+    0% {
+        top: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        opacity: .5;
+    }
+}
+
+@keyframes bottom {
+    0% {
+        bottom: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 100%;
+        opacity: .5;
+    }
+}
+
+.loading {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    border-top: .625rem solid  #212121;
+    border-right: .625rem solid  #212121;
+    border-bottom: .625rem solid  #212121;
+    border-left: .625rem solid #D1D1D1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 555555555555555;
+    animation: 1.5s load, 1.5s 1.5s load2;
+}
+
+@keyframes load {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(360deg);
+        display: none;
+    }
+}
+
+@keyframes load2 {
+    0% {
+        display: block;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
 .colorGray {
     color: #30363d;
 }
